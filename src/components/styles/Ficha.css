@@ -1,0 +1,26 @@
+.img-row {
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.ficha-image {
+    border-radius: 50%;
+    /*border-color: black;
+    border-width: 3;
+    overflow:hidden;*/
+    width: 270px;
+}
+
+.first {
+    margin-top: 30px;
+}
+
+.Datos {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.row {
+    margin-right: 0px;
+}
