@@ -3,7 +3,6 @@
 
 <p align="center">Project who makes a list of all Rick and Morty's universe characters, this show the data to each of one when you select. This project was made with React js with a material-design style.</p>
 
-![screenshot1](/screenshots/Screenshot_1.png)
 ![screenshot2](/screenshots/Screenshot_2.png)
 ![screenshot3](/screenshots/Screenshot_3.png)
 
