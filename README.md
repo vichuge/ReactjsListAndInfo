@@ -1,18 +1,63 @@
-Código fuente que enlista la API Rick y Morty API (https://rickandmortyapi.com/) y muestra la ficha de cada personaje al seleccionarlo con React JS. Front-end inspirado en tendencia mobile-first y material-design.
+<h3 align="center">Rick and Morty API list</h3>
 
-Código hecho por Victor Pacheco
-victor.hugo.pacheco.flores@gmail.com
 
-# Introducción
+<p align="center">Project who makes a list of all Rick and Morty's universe characters, this show the data to each of one when you select. This project was made with React js with a material-design style.</p>
 
-La lista muestra la primera página de la API con imágen del personaje y nombre, al seleccionarlo manda a una ficha técnica del personaje con datos adicionales
+![screenshot1](/screenshots/Screenshot_1.png)
+![screenshot2](/screenshots/Screenshot_2.png)
+![screenshot3](/screenshots/Screenshot_3.png)
 
-## Tecnologías usadas
-React JS basándome en la documentación oficial<br />
-React-Bootstrap (https://react-bootstrap.github.io/)<br />
-Material-ui (https://material-ui.com/)<br />
-react-router-dom (https://www.npmjs.com/package/react-router-dom)<br />
-npm
+## Live demo
 
-## License
-Dominio público
+[Live demo here!](https://vichuge.github.io/ReactjsListAndInfo/)
+
+## Built With
+
+- JavaScript
+- HTML5
+- CSS3
+- npm
+- webpack
+- React
+
+### Prerequisites
+
+- Text Editor (VSCode is suggested.)
+
+### Setup
+
+- Install [git](https://git-scm.com/downloads)
+- Open Terminal
+- Change directory to folder to download repository
+- Use `cd <file-path>`
+- Run `git clone https://github.com/vichuge/ReactjsListAndInfo.git`
+- open the folder
+- double click index.html
+- Here comes the website on the local machine.
+
+## Author
+
+👤 **Victor Pacheco**
+
+- GitHub: [@vichuge](https://github.com/vichuge)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/victor-pacheco-7946aab2/)
+- Twitter: [@Pachecofloresv](https://twitter.com/Pachecofloresv)
+
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome! 
+
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Thanks to [rickandmortyapi.com](https://rickandmortyapi.com/) to share this excellente API service!
+
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
