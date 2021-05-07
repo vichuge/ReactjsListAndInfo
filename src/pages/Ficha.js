@@ -18,6 +18,7 @@ import WorkIcon from '@material-ui/icons/Work'
 import BeachAccessIcon from '@material-ui/icons/BeachAccess'*/
 import {Wc, Place, Language, Pets, Person} from '@material-ui/icons'
 import Divider from '@material-ui/core/Divider'
+import arrowLeft from '../images/arrowleft.png'
 
 class Ficha extends React.Component {
 
@@ -89,7 +90,7 @@ class Ficha extends React.Component {
                     <div className="row first">
                         <div className="col-12">
                             <AddImg
-                                img="/images/arrowleft.png"
+                                img={arrowLeft}
                                 alt="back-image"
                                 to={"/" + pageValue}
                                 width="50px"

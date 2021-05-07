@@ -7,6 +7,8 @@ import Loading from '../components/Loading'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 import { Link } from 'react-router-dom'
+import arrowLeft from '../images/arrowleft.png';
+import arrowRight from '../images/arrowright.png'
 
 //import Button from '@material-ui/core/Button';
 
@@ -77,7 +79,7 @@ class Home extends React.Component {
                                 {
                                     this.state.data.info.prev != null ?
                                         <Link to={"/" + this.state.data.info.prev.slice(-1)} /*onClick={this.scrollTo}*/>
-                                            <img src="../images/arrowleft.png" className="img-add" alt="back" width="100px" />
+                                            <img src={arrowLeft} className="img-add" alt="back" width="100px" />
                                         </Link> : ''
                                 }
                             </div>
@@ -85,7 +87,7 @@ class Home extends React.Component {
                                 {
                                     this.state.data.info.next != null ?
                                         <Link to={"/" + this.state.data.info.next.slice(-1)} /*onClick={this.scrollTo}*/>
-                                            <img src="../images/arrowright.png" className="img-add" alt="next" width="100px" />
+                                            <img src={arrowRight} className="img-add" alt="next" width="100px" />
                                         </Link> : ''
                                 }
 
