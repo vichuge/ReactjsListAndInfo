@@ -64,7 +64,7 @@ class Home extends React.Component {
         return (
             <div>
                 <NavBar></NavBar>
-                <div className="row container">
+                <div className="row">
 
                     <div className="col-12">
                         <Welcome
