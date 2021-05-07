@@ -6,7 +6,7 @@ import imgNavBar from '../images/logo.svg';
 //https://react-bootstrap.github.io/components/navbar/
 const NavBar = () => (
     <Navbar bg="dark" variant="dark">
-    <Navbar.Brand href="/">
+    <Navbar.Brand href="https://vichuge.github.io/ReactjsListAndInfo/">
       <img
         alt=""
         src={imgNavBar}
