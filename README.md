@@ -1,61 +1,84 @@
-<h3 align="center">Rick and Morty API list</h3>
+<h3 align="center">Rick and Morty Explorer</h3>
 
+<p align="center">
+  Explora todos los personajes del universo de Rick and Morty: búsqueda por nombre, filtros por
+  estado y género, paginación y ficha de cada personaje con los episodios en los que aparece.
+</p>
 
-<p align="center">Project who makes a list of all Rick and Morty's universe characters, this show the data to each of one when you select. This project was made with React js with a material-design style.</p>
+![Listado de personajes](./screenshots/home.png)
+![Detalle de personaje](./screenshots/detail.png)
 
-![screenshot2](/screenshots/Screenshot_2.png)
-![screenshot3](/screenshots/Screenshot_3.png)
+<p align="center"><img src="./screenshots/mobile.png" alt="Vista móvil" width="320" /></p>
 
-## Live demo
+## Demo
 
-[Live demo here!](https://vichuge.github.io/ReactjsListAndInfo/)
+[Ver la demo en vivo](https://vichuge.github.io/ReactjsListAndInfo/)
 
-## Built With
+## Funcionalidades
 
-- JavaScript
-- HTML5
-- CSS3
-- npm
-- webpack
-- React
+- 🔎 Búsqueda por nombre con *debounce*
+- 🎛️ Filtros por estado (vivo, muerto, desconocido) y género
+- 📄 Paginación numerada; página y filtros viven en la URL (se pueden compartir y funcionan con atrás/adelante)
+- 🧪 Ficha del personaje con datos y lista de episodios
+- 🌗 Tema claro / oscuro (respeta la preferencia del sistema y recuerda tu elección)
+- 💀 *Skeletons* de carga, estados de error con reintento y estado vacío
+- 🔁 Reintentos automáticos y caché en memoria frente al rate-limit de la API
+- 📱 Diseño responsive y accesible (navegación por teclado, `aria-*`, *skip link*, `prefers-reduced-motion`)
 
-### Prerequisites
+## Tecnologías
 
-- Text Editor (VSCode is suggested.)
+- [React 19](https://react.dev/) + [React Router 7](https://reactrouter.com/)
+- [Vite](https://vite.dev/)
+- CSS moderno con variables (sin frameworks de UI)
+- [Vitest](https://vitest.dev/) + [Testing Library](https://testing-library.com/)
+- ESLint
 
-### Setup
+## Desarrollo local
 
-- Install [git](https://git-scm.com/downloads)
-- Open Terminal
-- Change directory to folder to download repository
-- Use `cd <file-path>`
-- Run `git clone https://github.com/vichuge/ReactjsListAndInfo.git`
-- open the folder
-- double click index.html
-- Here comes the website on the local machine.
+Requiere Node.js 20.19 o superior.
 
-## Author
+```bash
+git clone https://github.com/vichuge/ReactjsListAndInfo.git
+cd ReactjsListAndInfo
+npm install
+npm run dev
+```
+
+Abre http://localhost:5173/ReactjsListAndInfo/
+
+| Script            | Descripción                              |
+| ----------------- | ---------------------------------------- |
+| `npm run dev`     | Servidor de desarrollo                   |
+| `npm run build`   | Build de producción en `dist/`           |
+| `npm run preview` | Sirve el build de producción localmente  |
+| `npm test`        | Ejecuta los tests                        |
+| `npm run lint`    | Revisa el código con ESLint              |
+
+## Despliegue
+
+El sitio se publica automáticamente en GitHub Pages con GitHub Actions
+([`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml)):
+
+- En cada **pull request** se ejecutan lint, tests y build.
+- En cada **push / merge a `master`** además se despliega `dist/` en Pages.
+
+En *Settings → Pages* la fuente debe ser **GitHub Actions**.
+
+## Autor
 
 👤 **Victor Pacheco**
 
 - GitHub: [@vichuge](https://github.com/vichuge)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/victor-pacheco-7946aab2/)
+- LinkedIn: [Victor Pacheco](https://www.linkedin.com/in/victor-pacheco-7946aab2/)
 
+## 🤝 Contribuciones
 
-## 🤝 Contributing
+Contribuciones, *issues* y sugerencias son bienvenidas.
 
-Contributions, issues and feature requests are welcome! 
+## Agradecimientos
 
+- Gracias a [rickandmortyapi.com](https://rickandmortyapi.com/) por compartir esta API.
 
-## Show your support
+## 📝 Licencia
 
-Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Thanks to [rickandmortyapi.com](https://rickandmortyapi.com/) to share this excellente API service!
-
-
-## 📝 License
-
-This project is [MIT](./LICENSE) licensed.
+Este proyecto está bajo la licencia [MIT](./LICENSE).
