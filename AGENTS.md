@@ -58,10 +58,17 @@ Rutas: `/` (listado; estado en query params `page`, `name`, `status`, `gender`),
   compartirse y funcionar con atrás/adelante. Cambiar un filtro reinicia a la página 1.
 - **Peticiones a la API solo desde `src/api.js`**, consumidas con `useAsync(fn, deps)`, que cancela
   la petición anterior. No llames a `fetch` desde los componentes.
-- **Estilos:** usa los tokens de `:root` (`--surface`, `--accent`, `--text-muted`…) en lugar de
-  colores sueltos, y define todo color nuevo para los dos temas (`[data-theme='light']` y el bloque
-  `prefers-color-scheme`). Ojo con la especificidad: las reglas base van más abajo en el archivo y
-  pueden pisar a las de los media queries.
+- **Estilo visual: caricatura inspirada en la serie.** Superficies color papel (`--paper`) con
+  contorno de tinta (`--line`) y sombra dura desplazada (`--pop`, `--pop-lg`), y la paleta de la
+  serie (`--portal`, `--cyan`, `--morty`, `--pink`, `--orange`, `--purple`, `--ground`). El texto
+  sobre papel usa `--ink` / `--text-muted`; el texto sobre el cielo usa `--on-bg` / `--on-bg-muted`.
+  Los títulos llamativos usan `.drip-title` (Rubik Wet Paint); los encabezados, Fredoka; el
+  cuerpo, Nunito. Las ilustraciones (`Portal`, `Logo`) son SVG originales: no uses
+  arte, logos ni capturas oficiales de la serie.
+- **Temas:** el oscuro es un cielo nocturno con estrellas y el claro un cielo alienígena de día.
+  Solo cambian el fondo y `--on-bg*`; el papel y la tinta son iguales en los dos. Define todo color
+  dependiente del tema en `[data-theme='light']` y en el bloque `prefers-color-scheme`.
+- **CSS:** los media queries van al final de `global.css` para ganar en la cascada.
 - **Accesibilidad:** imágenes con `alt` (vacío si son decorativas), controles con etiqueta,
   `aria-current` / `aria-checked` / `aria-busy` donde aplique, foco visible y respeto a
   `prefers-reduced-motion`.

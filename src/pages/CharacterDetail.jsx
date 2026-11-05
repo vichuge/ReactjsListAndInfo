@@ -4,6 +4,7 @@ import { ApiError, getCharacter, getEpisodes } from '../api'
 import { useAsync } from '../hooks/useAsync'
 import StatusBadge from '../components/StatusBadge'
 import Avatar from '../components/Avatar'
+import Portal from '../components/Portal'
 import StateMessage from '../components/StateMessage'
 
 const GENDER = { Female: 'Femenino', Male: 'Masculino', Genderless: 'Sin género', unknown: 'Desconocido' }
@@ -92,6 +93,7 @@ export default function CharacterDetail() {
       <BackLink />
       <article className="detail">
         <div className="detail__image">
+          <Portal className="detail__portal" />
           <Avatar key={c.id} src={c.image} alt={c.name} width="300" height="300" />
         </div>
         <div className="detail__info">

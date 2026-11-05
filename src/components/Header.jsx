@@ -12,7 +12,7 @@ export default function Header() {
         <Link to="/" className="brand" aria-label="Rick and Morty Explorer, ir al inicio">
           <Logo />
           <span className="brand__text">
-            Rick <span className="brand__amp">&amp;</span> Morty <small>Explorer</small>
+            <span className="drip-title">Rick &amp; Morty</span> <small>Explorer</small>
           </span>
         </Link>
         <button

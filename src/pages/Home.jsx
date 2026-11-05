@@ -6,6 +6,7 @@ import Filters from '../components/Filters'
 import Pagination from '../components/Pagination'
 import CharacterCard, { CharacterCardSkeleton } from '../components/CharacterCard'
 import StateMessage from '../components/StateMessage'
+import Portal from '../components/Portal'
 
 const PAGE_SIZE = 20
 
@@ -44,13 +45,17 @@ export default function Home() {
   return (
     <>
       <section className="hero">
-        <h1 className="hero__title">
-          Explora el <span className="text-portal">multiverso</span>
-        </h1>
-        <p className="hero__subtitle">
-          Busca entre todos los personajes de Rick and Morty, filtra por estado o género y descubre
-          en qué episodios aparecen.
-        </p>
+        <Portal className="hero__portal" />
+        <div className="hero__content">
+          <h1 className="hero__title">
+            <span className="drip-title">
+              Rick and{" "}
+              <br />
+              Morty
+            </span>
+            <span className="hero__kicker">Explorer</span>
+          </h1>
+        </div>
       </section>
 
       <Filters name={name} status={status} gender={gender} onChange={updateParams} />
